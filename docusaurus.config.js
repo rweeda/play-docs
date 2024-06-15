@@ -9,8 +9,8 @@ const projectName = "play-docs";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	title: "Play Documentation",
-	tagline: "Games made easy",
+	title: "corderius-play documentatie",
+	tagline: "Leer nog beter Python door het maken van games",
 	url: `https://${organizationName}.github.io`,
 	baseUrl: `/${projectName}/`,
 	onBrokenLinks: "throw",
