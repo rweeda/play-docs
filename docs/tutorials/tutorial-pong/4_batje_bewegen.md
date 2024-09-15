@@ -5,19 +5,19 @@ sidebar_position: 5
 # Het batje bewegen
 
 ```python
-import play 
+import play
 
 paddle = play.new_box(
             color='black',
             x=0,
-            y=-300,
+            y=0,
             width=20,
             height=100,
         )
 
-@play.repeat_forever
-def beweeg_paddle():
-    if play.io.keypress.key_is_pressed('up'):
+@play.when_key_pressed('up')
+def beweeg_paddle(key):
+    if key == 'up':
         paddle.y = paddle.y + 10
 
 play.start_program()
@@ -25,17 +25,22 @@ play.start_program()
 
 We moeten het batje wel kunnen bewegen. Maar hoe?
 
-Met het volgende if-statement checken we of de gebruiker pijltje omhoog ingeduwd heeft:
+```python
+@play.when_key_pressed('up')
+```
+De regel code hierboven betekent dat de code eronder alleen draait als het pijltje omhoog ingedrukt is.
 
 ```python
-if play.io.keypress.key_is_pressed('up'):
+def beweeg_paddle(key):
 ```
-
-als dit zo is, kunnen wij het batje verplaatsen d.m.v.van de y coördinaat.
+Dit is een belangrijke regel. **key** krijgt de waarde van de toets die ingedrukt wordt. Als je pijltje omhoog ingedrukt hebt, krijt **key** dus de waarde van **up**.
 
 ```python
-paddle.y = paddle.y + 10
+if key == 'up':
+    paddle.y = paddle.y + 10
 ```
+Als je pijltje omhoog hebt ingedrukt, kunnen wij het batje verplaatsen d.m.v. de y coördinaat.
+
 De nieuwe waarde van **y** is de waarde die y eerst had + 10. En dan gaat deze dus omhoog.
 
 ## Stap 1: draai dit script
@@ -64,9 +69,9 @@ paddle = play.new_box(
 
 @play.repeat_forever
 def beweeg_paddle():
-    if play.io.keypress.key_is_pressed('up'):
+    if play.key_is_pressed('up'):
         paddle.y = paddle.y + 10
-    if play.io.keypress.key_is_pressed('down'):
+    if play.key_is_pressed('down'):
         paddle.y = paddle.y - 10
 
 play.start_program()
@@ -90,7 +95,7 @@ paddle = play.new_box(
 
 @play.repeat_forever
 def beweeg_paddle():
-    if play.io.keypress.key_is_pressed('up'):
+    if play.key_is_pressed('up'):
         if DOOR_JOU_IN_TE_VULLEN:
             paddle.y = paddle.y + 10
 
