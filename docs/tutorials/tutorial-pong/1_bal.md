@@ -26,26 +26,30 @@ Analyseer de code en voer hem uit op je computer (kopieer hem naar je editor en 
 
 <details>
   <summary>Klik hier voor een tip</summary>
-  <p>Pas <b>radius</b> aan</p>
+
+  Pas **radius** aan
+
 </details>
 
 <details>
   <summary>Vind je het lastig? Klik hier voor een voorbeeld.</summary>
-  <pre><code>
+
+
+```py
 import play
 
 ball = play.new_circle(color='black',
-				   x=0,
-				   y=0,
-				   radius=10,
-				   border_color="light blue",
-				   border_width=10,
-				   transparency=100)
+					   x=0,
+					   y=0,
+					   radius=10,
+					   border_color="light blue",
+					   border_width=10,
+					   transparency=100)
 
 
 play.start_program()
-	  
-  </code></pre>
+```
+
 
 </details>
 
