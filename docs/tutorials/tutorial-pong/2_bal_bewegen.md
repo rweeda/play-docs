@@ -37,13 +37,17 @@ Kijk maar eens wat er gebeurt als je dit script draait.
 
 <details>
   <summary>Klik hier voor een tip</summary>
-  <p>Pas **x_speed** aan</p>
+  
+
+  Pas **x\_speed** aan
+
+
 </details>
 
 <details>
   <summary>Vind je het lastig? Klik hier voor een voorbeeld.</summary>
-  <p>
-  ```python 
+
+```py
 import play
 
 ball = play.new_circle(
@@ -59,20 +63,21 @@ ball.start_physics(
 )
 
 play.start_program()
-    ```
-  </p>
+```
 </details>
 
 ## Stap 3: Pas de code zo aan dat de bal naar links beweegt in plaats van naar rechts.
 <details>
   <summary>Klik hier voor een tip</summary>
-  <p>Welke waarde moet **x_speed** hebben zodat de bal naar links gaat?</p>
+
+  Welke waarde moet **x_speed** hebben zodat de bal naar links gaat?
+
 </details>
 
 <details>
   <summary>Vind je het lastig? Klik hier voor een voorbeeld.</summary>
-  <p>
-  ```python 
+
+```py
 import play
 
 ball = play.new_circle(
@@ -88,8 +93,7 @@ ball.start_physics(
 )
 
 play.start_program()
-    ```
-  </p>
+```
 </details>
 
 

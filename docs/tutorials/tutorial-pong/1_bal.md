@@ -58,13 +58,15 @@ play.start_program()
 
 <details>
   <summary>Klik hier voor een tip</summary>
-  <p>Wat hebben **color**, **border_color** en **border_width** met elkaar te maken?</p>
+
+  Wat hebben **color**, **border_color** en **border_width** met elkaar te maken?
+
 </details>
 
 <details>
   <summary>Vind je het lastig? Klik hier voor een voorbeeld.</summary>
-  <p>
-  ```python 
+
+```py 
 import play
 
 ball = play.new_circle(color='black',
@@ -77,8 +79,8 @@ ball = play.new_circle(color='black',
 
 
 play.start_program()
-    ```
-  </p>
+```
+
 </details>
 
 ### Stap 4: verplaats de bal
