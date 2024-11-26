@@ -84,4 +84,4 @@ play.start_program()
 </details>
 
 ### Stap 4: verplaats de bal
-Zet de bal op x=100, x=-100. waar is dat op het scherm?
+Zet de bal op x=100, y=-100. waar is dat op het scherm?
