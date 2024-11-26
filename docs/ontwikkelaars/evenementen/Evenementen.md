@@ -5,8 +5,8 @@ sidebar_position: 0
 Welke evenementen zijn er allemaal in Corderius play?
 
 Er zijn ook nog verschillende subcategorieën van evenementen. Deze zijn:
-* [Muis](./Muis)
-* [Controllers](./Controllers)
+* [Muis](./Muis.md)
+* [Controllers](./Controllers.md)
 
 
 # Lijst
