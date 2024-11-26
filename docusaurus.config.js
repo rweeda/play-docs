@@ -9,7 +9,7 @@ const projectName = "play-docs";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	title: "corderius-play documentatie",
+	title: "Corderius play documentatie",
 	tagline: "Leer nog beter Python door het maken van games",
 	url: `https://${organizationName}.github.io`,
 	baseUrl: `/${projectName}/`,
@@ -21,7 +21,7 @@ const config = {
 
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
-	organizationName, // Usually your GitHub org/user name.
+	organizationName, // Usually your GitHub org/username.
 	projectName, // Usually your repo name.
 
 	// Even if you don't use internalization, you can use this field to set useful
@@ -55,10 +55,6 @@ const config = {
 		({
 			navbar: {
 				title: "Play",
-				// logo: {
-				// 	alt: "Play Logo",
-				// 	src: "img/logo.svg",
-				// },
 				items: [
 					{
 						type: "doc",
@@ -78,8 +74,8 @@ const config = {
 				darkTheme: darkCodeTheme,
 			},
 			footer: {
-      copyright: `Licensed under Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)`,
-    },
+				copyright: `Licensed under Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)`,
+			},
 		}),
 };
 
