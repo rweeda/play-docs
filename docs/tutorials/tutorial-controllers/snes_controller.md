@@ -13,20 +13,21 @@ Verbind de SNES controller aan je computer met de USB-kabel.
 Draai vervolgens het volgende script:
 
 ```python
-import pygame
-pygame.init()
-joystick=pygame.joystick.Joystick(0)
-joystick.init()
-print("Joystick Name:", joystick.get_name())
+import play
+
+all_controllers = play.controllers.get_all_controllers()
+for a_controller in all_controllers:
+    print(f'Controller: {a_controller.get_instance_id()}')
 ```
 
-Als het goed is, zou je iets moeten zijn wat hierop lijkt:
+Als het goed is, zou je iets moeten zien wat hierop lijkt:
 ```
-pygame 2.5.2 (SDL 2.28.3, Python 3.10.11)
+pygame 2.5.2 (SDL 2.28.3, Python 3.11.7)
 Hello from the pygame community. https://www.pygame.org/contribute.html
-Joystick Name: usb gamepad
+Controller: 0
 ```
 Het belangrijkste is:
 ```markdown
-Joystick Name: usb gamepad
+Controller : 0
 ```
+Je weet nu dat het nummer van je controller **0** is. Als je meer dan één SNES controller verbindt, dan zou je hier twee getallen moeten zien.
