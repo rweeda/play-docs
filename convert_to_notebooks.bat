@@ -12,4 +12,8 @@ jupytext .\docs\eerste_programma\je_eerste_rechthoek.md -o ia\eerste_programma\j
 powershell "Copy-Item -Path ./docs/eerste_programma\cruijff.png -Destination ./ia/eerste_programma/cruijff.png"
 jupytext .\docs\eerste_programma\je_eerste_tekst.md -o ia\eerste_programma\je_eerste_tekst.ipynb
 
+powershell "New-Item -ItemType Directory -Path 'ia/bewegende_vormen'"
+jupytext .\docs\bewegende_vormen\op_naar_beweging.md -o ia\bewegende_vormen\op_naar_beweging.ipynb
+jupytext .\docs\bewegende_vormen\eerste_beweging.md -o ia\bewegende_vormen\eerste_beweging.ipynb
+
 echo Done!
