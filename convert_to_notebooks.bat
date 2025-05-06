@@ -3,6 +3,8 @@ powershell "if (Test-Path -Path 'ia' -PathType Container) { Remove-Item -Path 'i
 powershell "New-Item -ItemType Directory -Path 'ia'"
 
 
+jupytext .\docs\cheatsheet.md -o ia\cheatsheet.ipynb
+
 powershell "New-Item -ItemType Directory -Path 'ia/eerste_programma'"
 jupytext .\docs\eerste_programma\play_importeren.md -o ia\eerste_programma\play_importeren.ipynb
 jupytext .\docs\eerste_programma\je_eerste_programma.md -o ia\eerste_programma\je_eerste_programma.ipynb
