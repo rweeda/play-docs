@@ -85,3 +85,61 @@ play.start_program()
 | font_size | de grootte van de font | ❌ | ❌ | ✅ |
 
 </details>
+
+## Fysica
+
+<details>
+  <summary>Hoe voeg ik fysica toe aan een vorm? (play.start_physics)</summary>
+
+```py
+import play 
+
+cirkel = play.new_circle()
+cirkel.start_physics()
+
+play.start_program()
+```
+</details>
+
+<details>
+  <summary>Hoe verander ik de fysica van een vorm? (play.start_physics)</summary>
+
+```py
+import play 
+
+cirkel = play.new_circle()
+cirkel.start_physics(obeys_gravity=False)
+
+play.start_program()
+```
+
+OF 
+
+```py
+import play 
+
+cirkel = play.new_circle()
+cirkel.start_physics()
+
+cirkel.physics.obeys_gravity = False
+
+play.start_program()
+```
+
+</details>
+
+
+<details>
+  <summary>Wat kan ik allemaal aanpassen aan de fysica? (play.start_physics)</summary>
+
+| Attribuut | Uitleg | 
+|:---:|:---:|
+| obeys_gravity | True --> zwaartekracht wordt nagedaan, False --> geen zwaartekracht | 
+| x_speed | hoe hard wil je dat de bal beweegt op de horizontale as? | 
+| y_speed | hoe hard wil je dat de bal beweegt op de verticale as? | 
+| can_move | True --> de vorm mag bewegen, False, de vorm staat altijd stil | 
+| stable | True --> als iets botst tegen vorm, zal deze niet bewegen, False, de vorm zal bewegen bij een botsing.
+| bounciness | 1.0 vorm kaatst net zo hard terug als dat deze aankwam. 0 --> vorm kaatst niet terug bij botsing | 
+| mass | hoe 'zwaar' is je vorm?  Dit kan snel ingewikkeld worden. Maar je kan je voorstellen dat een botsing anders is tussen twee vormen die even zwaar zijn in plaats van als vormen verschillend gewicht hebben. | 
+| friction | 0 --> geen frictie (energie blijft behouden). | 
+</details>
