@@ -1,8 +1,8 @@
 ---
-sidebar_position: 10
+sidebar_position: 100
 ---
 
-# Documentatie
+# Code documentatie
 
 De [code documentatie](https://corderius-college-amersfoort.github.io/play/play.html) kun je hier vinden.
 

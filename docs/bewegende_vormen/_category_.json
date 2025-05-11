@@ -1,8 +1,8 @@
 {
-  "label": "Vormen achteraf wijzigen",
+  "label": "Fysica",
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "Wijzig een vorm nadat je deze gemaakt hebt"
+    "description": "Laat een vorm bewegen"
   }
 }
