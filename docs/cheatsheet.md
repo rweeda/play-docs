@@ -147,71 +147,6 @@ Hello from the pygame community. https://www.pygame.org/contribute.html
 Nu weet je dus dat de meest rechter pixel van de bal op x=100 staat.
 </details>
 
-
-## Acties
-
-<details>
-  <summary>Hoe maak een ik vorm onzichtbaar (hide)?</summary>
-
-Hiermee teken je een cirkel en maak je hem onmiddelijk onzichtbaar.
-
-Let op: .hide() verandert het volgende:
-- **cirkel.is_hidden** krijgt de waarde **True**
-- **cirkel.is_shown** krijgt de waarde **False**
-- Als je fysica gebruikt, gaat die op pauze :)
-
-```py
-import play 
-
-cirkel = play.new_circle()
-cirkel.hide()
-
-play.start_program()
-```
-</details>
-
-<details>
-  <summary>Hoe maak een ik vorm weer zichtbaar (show)?</summary>
-
-Hiermee teken je een cirkel en maak je hem onmiddelijk onzichtbaar en weer zichtbaar
-
-Let op: .show() verandert het volgende:
-- **cirkel.is_hidden** krijgt de waarde **False**
-- **cirkel.is_shown** krijgt de waarde **True**
-- Als je fysica gebruikte, gaat deze weer aan en weer werken
-
-```py
-import play 
-
-cirkel = play.new_circle()
-cirkel.hide()
-cirkel.show()
-
-play.start_program()
-```
-</details>
-
-
-<details>
-  <summary>Hoe verwijder ik een vorm? (remove)?</summary>
-
-Allereerst een vraag: heb je dit echt nodig of is **.hide()** misschien ook al genoeg?
-Met **.remove()**:
-- verwijder je de vorm
-- je kunt opvragen of de vorm 'leeft' via **cirkel.is_alive()**. Deze is **False** als de vorm verwijderd is.
-
-```py
-import play 
-
-cirkel = play.new_circle()
-cirkel.remove()
-
-play.start_program()
-````
-
-</details>
-
-
 ## Fysica
 
 <details>
@@ -286,7 +221,70 @@ play.start_program()
 ```
 </details>
 
-## Algemene gebeurtenissen
+## Acties
+
+<details>
+  <summary>Hoe maak een ik vorm onzichtbaar (hide)?</summary>
+
+Hiermee teken je een cirkel en maak je hem onmiddelijk onzichtbaar.
+
+Let op: .hide() verandert het volgende:
+- **cirkel.is_hidden** krijgt de waarde **True**
+- **cirkel.is_shown** krijgt de waarde **False**
+- Als je fysica gebruikt, gaat die op pauze :)
+
+```py
+import play 
+
+cirkel = play.new_circle()
+cirkel.hide()
+
+play.start_program()
+```
+</details>
+
+<details>
+  <summary>Hoe maak een ik vorm weer zichtbaar (show)?</summary>
+
+Hiermee teken je een cirkel en maak je hem onmiddelijk onzichtbaar en weer zichtbaar
+
+Let op: .show() verandert het volgende:
+- **cirkel.is_hidden** krijgt de waarde **False**
+- **cirkel.is_shown** krijgt de waarde **True**
+- Als je fysica gebruikte, gaat deze weer aan en weer werken
+
+```py
+import play 
+
+cirkel = play.new_circle()
+cirkel.hide()
+cirkel.show()
+
+play.start_program()
+```
+</details>
+
+
+<details>
+  <summary>Hoe verwijder ik een vorm? (remove)?</summary>
+
+Allereerst een vraag: heb je dit echt nodig of is **.hide()** misschien ook al genoeg?
+Met **.remove()**:
+- verwijder je de vorm
+- je kunt opvragen of de vorm 'leeft' via **cirkel.is_alive()**. Deze is **False** als de vorm verwijderd is.
+
+```py
+import play 
+
+cirkel = play.new_circle()
+cirkel.remove()
+
+play.start_program()
+````
+
+</details>
+
+## Gebeurtenissen
 - @play.when_program_starts
 - @play.when_key_pressed
 - @play.when_key_released
