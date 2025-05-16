@@ -280,18 +280,200 @@ cirkel = play.new_circle()
 cirkel.remove()
 
 play.start_program()
-````
+```
 
 </details>
 
 ## Gebeurtenissen
-- @play.when_program_starts
-- @play.when_key_pressed
-- @play.when_key_released
-- @play.when_any_key_pressed
-- @play.when_any_key_released
-- @play.when_mouse_clicked
-- @play.when_click_released
+<details>
+  <summary>Bij de start van het programma (@play.when_program_starts)</summary>
+
+  ```py
+  import play
+
+  @play.when_program_starts
+  def setup_game():
+      play.new_text(words="Welkom!")      
+
+  play.start_program()
+  ```
+</details>
+
+<details>
+  <summary>Bij het indrukken van één specifieke toets (@play.when_key_pressed)</summary>
+
+Je gebruikt **@play.when_key_pressed** om te checken of een toets ingedrukt wordt. Wat je tussen de haakjes zet (in dit geval 'space') is welke toets gedetecteerd wordt.
+
+  ```python
+  import play
+
+  box = play.new_box()
+
+  @play.when_key_pressed("space")
+  def spatie_ingedrukt():
+    box.x = box.x + 10
+      
+  play.start_program()
+  ```
+</details>
+
+<details>
+  <summary>Bij het indrukken van twee or meerdere toetsen (@play.when_key_pressed)</summary>
+
+Als je met meerdere toetsen te maken hebt, heb je in ieder geval twee opties. 
+- twee losse **@play.when_key_pressed** gebeurtenissen
+- één **play.when_key_pressed** gebeurtenis
+
+**twee @play.when_key_pressed gebeurtenissen**
+
+```python
+import play
+
+box = play.new_box()
+
+@play.when_key_pressed("up")
+def omhoog():
+  box.y = box.y + 10
+
+@play.when_key_pressed('down')
+def omlaag():
+  box.y = box.y - 10
+    
+play.start_program()
+```
+
+OF
+
+**één @play.when_key_pressed gebeurtenis**
+Let op, nu heb je **key** nodig.
+
+```python
+import play
+
+box = play.new_box()
+
+@play.when_key_pressed("down", "up")
+def omhoog_of_omlaag(key):
+  if key == 'up':
+    box.y = box.y + 10
+  if key == 'down':
+    box.y = box.y - 10
+    
+play.start_program()
+```
+
+
+</details>
+
+<details>
+  <summary>Bij het loslaten van één specifieke toets (@play.when_key_released)</summary>
+
+Je gebruikt **@play.when_key_released** om te checken of een toets losgelaten wordt. 
+
+```python
+import play
+
+box = play.new_box()
+
+@play.when_key_released("up")
+def omhoog():
+  box.y = box.y + 10
+    
+play.start_program()
+```
+</details>
+
+
+<details>
+  <summary>Bij het loslaten van twee of meerdere toetsen (@play.when_key_released)</summary>
+
+Als je met meerdere toetsen te maken hebt, heb je in ieder geval twee opties. 
+- twee losse **@play.when_key_released** gebeurtenissen
+- één **play.when_key_released** gebeurtenis
+
+**twee @play.when_key_released gebeurtenissen**
+
+```python
+import play
+
+box = play.new_box()
+
+@play.when_key_released("up")
+def omhoog():
+  box.y = box.y + 10
+
+@play.when_key_released('down')
+def omlaag():
+  box.y = box.y - 10
+    
+play.start_program()
+```
+
+OF
+
+**één @play.when_key_released gebeurtenis**
+Let op, nu heb je **key** nodig.
+
+```python
+import play
+
+box = play.new_box()
+
+@play.when_key_released("down", "up")
+def omhoog_of_omlaag(key):
+  if key == 'up':
+    box.y = box.y + 10
+  if key == 'down':
+    box.y = box.y - 10
+    
+play.start_program()
+```
+
+
+</details>
+
+<details>
+  <summary>Bij het indrukken van een willekeurige toets (@play.when_any_key_pressed)</summary>
+
+  Met **@play.when_any_key_pressed** kun je een functie uitvoeren zodra welke toets dan ook op het toetsenbord wordt ingedrukt. Met **key** kun je dan weten welke toets ingedrukt wordt.
+
+  ```python
+  import play
+
+  instructie_tekst = play.new_text("Druk op een toets", y=50)
+  feedback_tekst = play.new_text(words="", y=0)
+
+  @play.when_any_key_pressed
+  def handel_toets_af(key):
+    feedback_tekst.words = f"Je drukte op: {key}"
+      
+  play.start_program()
+```
+</details>
+
+
+<details>
+  <summary>Bij het loslaten van een willekeurige toets (@play.when_any_key_released)</summary>
+
+  Met **@play.when_any_key_released** kun je een functie uitvoeren zodra welke toets dan ook op het toetsenbord wordt losgelaten. Met **key** kun je dan weten welke toets losgelaten wordt.
+
+```python
+import play
+
+instructie_tekst = play.new_text("Laat een toets los", y=50)
+feedback_tekst = play.new_text(words="", y=0)
+
+@play.when_any_key_released
+def toets_wordt_losgelaten(key):
+  feedback_tekst.words = f"Je liet los: {key}"
+    
+play.start_program()
+```
+</details>
+
+
+- Bij het indrukken van de muis (@play.when_mouse_clicked)
+- Bij het loslaten van de muis (@play.when_click_released)
 - @play.repeat_forever
 
 ## Gebeurtenis bij een vorm
