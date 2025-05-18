@@ -207,6 +207,38 @@ play.start_program()
 
 
 <details>
+  <summary>Hoe zet ik de fysica op pauze en weer aan? (.phyiscs.pause() & .physics.unpause())</summary>
+
+Met **.physics.pause** zet je de fysica op pauze en met **.physics.unpause** zet je de fysica weer aan.
+
+Een voorbeeld met **pause**:
+```python
+import play 
+
+cirkel = play.new_circle()
+cirkel.start_physics()
+cirkel.physics.pause()
+
+play.start_program()
+```
+
+Een voorbeeld met ook **unpause**:
+
+```python
+import play 
+
+cirkel = play.new_circle()
+cirkel.start_physics()
+cirkel.physics.pause()
+cirkel.physics.unpause()
+
+play.start_program()
+```
+
+
+</details>
+
+<details>
   <summary>Hoe zet ik de fysica uit? (stop_physics())</summary>
 
 Met **stop_physics()** zet je de physics uit.
@@ -471,14 +503,36 @@ play.start_program()
 ```
 </details>
 
-
 - Bij het indrukken van de muis (@play.when_mouse_clicked)
 - Bij het loslaten van de muis (@play.when_click_released)
-- @play.repeat_forever
+
+<details>
+<summary>Bij elk frame (@play.repeat_forever)</summary>
+
+```python
+import play
+
+frames=0
+play.new_text('Aantal frames sinds start:', y=100)
+tekst = play.new_text(words=str(frames))
+
+@play.repeat_forever
+def altijd():
+  global frames
+  frames = frames + 1
+  tekst.words = str(frames)
+
+play.start_program()
+```
+
+</details>
+
 
 ## Gebeurtenis bij een vorm
 - @VARIABLE.when_stopped_touching
-- @VARIABLE.when_touching
+- Wanneer twee vormen elkaar raken (@VARIABLE.when_touching)
+- @VARIABELE.when_touching
 - @VARIABELE.when_stopped_touching_wall
 - @VARIABLE.when_touching_wall
+- @VARIABLE.when_touching
 - @VARIABLE.when_clicked
