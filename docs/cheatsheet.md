@@ -503,8 +503,55 @@ play.start_program()
 ```
 </details>
 
-- Bij het indrukken van de muis (@play.when_mouse_clicked)
-- Bij het loslaten van de muis (@play.when_click_released)
+<details>
+  <summary>Bij het indrukken van de muis (@play.when_mouse_clicked)</summary>
+
+**when_mouse_clicked** gebruik je voor om een muisklik te detecteren.
+
+```python
+import play
+
+# Maak een cirkel
+circle = play.new_circle(color="blue")
+
+# Deze functie wordt uitgevoerd als je op de muis klikt
+@play.when_mouse_clicked
+def muis_geklikt():
+  if circle.color == "blue":
+    circle.color = "red"
+  else:
+    circle.color = "blue"
+  print("Muis geklikt! De cirkel is nu " + str(circle.color))
+
+# Start het programma
+play.start_program()
+```
+</details>
+
+<details>
+  <summary>Bij het loslaten van de muis (@play.when_click_released)</summary>
+
+Let op, deze gebeurtenis gebeurt pas als je de muis loslaat.
+
+```python
+import play
+
+# Maak een cirkel
+circle = play.new_circle(color="blue")
+
+# Deze functie wordt uitgevoerd als je op de muis klikt
+@play.when_click_released
+def muis_geklikt():
+  if circle.color == "blue":
+    circle.color = "red"
+  else:
+    circle.color = "blue"
+  print("Muis geklikt! De cirkel is nu " + str(circle.color))
+
+# Start het programma
+play.start_program()
+```
+</details>
 
 <details>
 <summary>Bij elk frame (@play.repeat_forever)</summary>
@@ -529,10 +576,49 @@ play.start_program()
 
 
 ## Gebeurtenis bij een vorm
-- @VARIABLE.when_stopped_touching
+
+<details>
+  <summary>Wanneer een vorm stopt met het aanraken van een andere vorm (@VARIABLE.when_stopped_touching)</summary>
+
+```python
+import play
+
+bal = play.new_circle(color="blue", radius=50)
+bal.start_physics(obeys_gravity=False, x_speed=60)
+
+batje = play.new_box(x=300)
+batje.start_physics(can_move=False, obeys_gravity=False)
+
+text = play.new_text(words="batje is niet aangeraakt", y=200)
+
+@bal.when_stopped_touching(batje)
+def aangeraakt():
+    text.words = 'batje is aangeraakt'
+    
+play.start_program()
+````
+</details>
+
+<details>
+  <summary>Wanneer een vorm stopt met het aanraken van de muur (@VARIABLE.when_stopped_touching_wall)</summary>
+
+```python
+import play
+
+bal = play.new_circle(color="blue", radius=50)
+bal.start_physics(obeys_gravity=False, x_speed=60)
+
+text = play.new_text(words="muur is niet aangeraakt", y=200)
+
+@bal.when_stopped_touching_wall
+def aangeraakt():
+    text.words = 'muur is aangeraakt'
+
+play.start_program()
+```
+</details>
+
+
 - Wanneer twee vormen elkaar raken (@VARIABLE.when_touching)
-- @VARIABELE.when_touching
-- @VARIABELE.when_stopped_touching_wall
-- @VARIABLE.when_touching_wall
-- @VARIABLE.when_touching
-- @VARIABLE.when_clicked
+- Wanneer een vorm de muur aanraakt (@VARIABLE.when_touching_wall)
+- Wanneer op een vorm geklikt wordt (@VARIABLE.when_clicked)
