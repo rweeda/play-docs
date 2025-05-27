@@ -622,3 +622,47 @@ play.start_program()
 - Wanneer twee vormen elkaar raken (@VARIABLE.when_touching)
 - Wanneer een vorm de muur aanraakt (@VARIABLE.when_touching_wall)
 - Wanneer op een vorm geklikt wordt (@VARIABLE.when_clicked)
+
+## Tijd
+
+<details>
+  <summary>Ik wil tijdelijk iets veranderen aan een vorm, bijvoorbeeld de snelheid (async await)</summary>
+
+```python
+import play
+
+ball = play.new_circle(color='black')
+ball.start_physics(obeys_gravity=False, x_speed=10)
+
+@play.when_mouse_clicked
+async def tijdelijk_sneller():
+    ball.physics.x_speed = 30
+    await play.timer(seconds=1)
+	ball.physics.x_speed = 10
+	
+
+play.start_program()
+```
+
+</details>
+
+<details>
+  <summary>Hoe maak ik een timer?</summary>
+
+```python
+import play
+ 
+time = 10
+text = play.new_text(str(time))
+print(time)
+ 
+@play.repeat_forever
+async def timer():
+    global time
+    if time > 0:
+        time -= 1
+        await play.timer(seconds=1)
+        text.words = str(time)
+play.start_program()
+```
+</details>
