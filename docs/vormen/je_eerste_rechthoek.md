@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Je eerste rechthoek
+# 1.3 Je eerste rechthoek
 
 We kunnen ook andere vormen tekenen, bijvoorbeeld een rechthoek.
 

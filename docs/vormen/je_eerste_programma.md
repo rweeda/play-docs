@@ -2,10 +2,9 @@
 sidebar_position: 2
 ---
 
-# Je eerste programma
+# 1.1 Je eerste programma
 
-Nu het importeren gelukt is, is het tijd voor het scherm van je spel
-
+Laten we eens kijken of het installeren gelukt is :).
 ```python
 import play
 

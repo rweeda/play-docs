@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Je eerste tekst
+# 1.4 Je eerste tekst
 We missen nog één ding: een tekst. Het is toch wel fijn als onze tekeningen en spellen ook tekst kunnen hebben.
 
 Uiteraard is het systeem hetzelfde als bij **play.new_circle** en **play.new_box**.
