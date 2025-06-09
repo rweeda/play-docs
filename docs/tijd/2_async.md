@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Tijdelijk sneller met async await?
+# 6.2 Tijdelijk sneller met async await?
 
 Ok, dat werkte niet. We moeten een manier hebben om alleen één functie te laten wachten
 terwijl de rest van het spel doorgaat.
@@ -24,10 +24,7 @@ async def tijdelijk_sneller():
 play.start_program()
 ```
 
-## Stap 1: draai de code
-Beweegt de bal tijdelijk sneller?
-
-## Stap 2: Hoe werkt dit?
+Hoe werkt dit?
 
 ```python
 async def tijdelijk_sneller():

@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Wachten met time.sleep
+# 6.1 Wachten met time.sleep
 
 We beginnen met een bewegende bal.
 
@@ -15,7 +15,7 @@ ball.start_physics(obeys_gravity=False, x_speed=10)
 play.start_program()
 ```
 
-## Wachten met time.sleep
+## 6.1.1 Wachten met time.sleep
 We gaan nu proberen om de ball tijdelijk sneller te laten bewegen bij een muisklik.
 Je meest logische gedachte is misschien om **time.sleep*8 te gebruiken:
 

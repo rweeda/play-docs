@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Async voorbeeld: timer
+# 6.3  Async voorbeeld: timer
 
 Async kan bijvoorbeeld goed gebruikt worden voor een timer.
 

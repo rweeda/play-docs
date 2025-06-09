@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Pong
+# 7.1 Pong
 Waarom niet? Een super bekend spel en deze library is uitermate geschikt voor het bouwen van pong.
 Laten we eens bekijken wat we nodig hebben?
 
