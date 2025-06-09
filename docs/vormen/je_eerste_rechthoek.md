@@ -38,7 +38,7 @@ play.new_box(width=200, height=200)
 play.start_program()
 ```
 
-## Opdracht X.X een weg tekenen
+### Opdracht 1.4 een weg tekenen
 
 We gaan deze afbeelding namaken met **play.new_box**
 ![weg](weg.png)
@@ -57,6 +57,32 @@ play.new_box(color='white')
 
 play.start_program()
 ```
+
+<details>
+    <summary>Klik hier voor een tip!</summary>
+
+Gebruik drie keer **play.new_box** 
+en het is nuttig om de attributen **y**, **width** en **height** te gebruiken.
+
+</details>
+
+<details>
+    <summary>Klik hier voor een oplossing!</summary>
+
+```python
+import play
+
+# een zwarte achtergrond
+play.new_box(width=800, height=600)
+
+# een eerste wit rechthoek
+play.new_box(color='white', y=200, width=50, height=100)
+play.new_box(color='white', y=0, width=50, height=100)
+play.new_box(color='white', y=-200, width=50, height=100)
+
+play.start_program()
+```
+</details>
 
 
 

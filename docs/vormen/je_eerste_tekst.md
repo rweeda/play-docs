@@ -24,15 +24,11 @@ play.new_text(words='hallo pythonista', font='arial', font_size=30)
 play.start_program()
 ```
 
-## Opdracht X.X Johan Cruijff
+### Opdracht 1.5 Johan Cruijff
 
 Maak onderstaande afbeelding na.
 
 ![cruijff](cruijff.png)
-
-Tips:
-- het zijn twee **play.new_text** aanroepen
-- we gebruiken 'arial' als font
 
 ```python
 import play
@@ -42,6 +38,30 @@ play.new_text(words='Als ik zou willen dat je het begreep,')
 
 play.start_program()
 ```
+
+<details>
+    <summary>Klik hier voor een tip!</summary>
+
+Het zijn drie **play.new_text** aanroepen en we gebruiken 'arial' als font.
+De font_size is 40.
+
+</details> 
+
+<details>
+    <summary>Klik hier voor een oplossing!</summary>
+
+```python
+import play
+
+play.new_text(words='Als ik zou willen dat je het begreep,', y=100, font='arial', font_size=40)
+play.new_text(words='zou ik het beter hebben uitgelegd', y=0, font='arial', font_size=40)
+play.new_text(words='Johan Cruijff', y=-100, font='arial', font_size=40)
+
+play.start_program()
+```
+
+</details>
+
 
 
 

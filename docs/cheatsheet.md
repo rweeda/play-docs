@@ -16,6 +16,17 @@ play.new_circle()
 
 play.start_program()
 ```
+
+Wat kan ik aanpassen aan een cirkel?
+Hierbij de lijst van attributen voor een cirkel:
+- **color**: staat standaard op 'black'. [Op deze pagina](https://www.pygame.org/docs/ref/color_list.html) zie je welke opties er zijn.
+- **x**: staat standaard op 0 (het midden). Lager dan 0 is naar links, boven 0 is naar rechts.
+- **y**: staat standaard op 0 (het midden), Lager dan 0 is naar beneden, boven 0 is naar boven.
+- **radius**: staat standaard op 100. Hoe groter de waarde, hoe groter de cirkel.
+- **border_color**: staat standaard op  'light blue'. Let op, als de **border_width** 0 is, zie je de rand niet.
+- **border_width**: the breedte van de rand. Staat standaard op 0 (geen rand zichtbaar)
+- **transparency**: 0 --> onzichtbaar. 100 --> volledig zichtbaar.
+
 </details>
 
 <details>
@@ -28,6 +39,18 @@ play.new_box()
 
 play.start_program()
 ```
+
+Net zoals bij **play.new_circle** heeft het programma voor ons nu ook al de kleur en grootte bepaald. Je kunt dit zelf natuurlijk aanpassen!
+Dit zijn de attributen voor **play.new_box**:
+- **color**: staat standaard op 'black'. [Op deze pagina](https://www.pygame.org/docs/ref/color_list.html) zie je welke opties er zijn.
+- **x**: staat standaard op 0 (het midden). Lager dan 0 is naar links, boven 0 is naar rechts.
+- **y**: staat standaard op 0 (het midden), Lager dan 0 is naar beneden, boven 0 is naar boven.
+- **width**: de breedte van de rechthoek.
+- **height**: de hoogte van de rechthoek.
+- **border_color**: staat standaard op  'light blue'. Let op, als de **border_width** 0 is, zie je de rand niet.
+- **border_radius**: the breedte van de rand. Staat standaard op 0 (geen rand zichtbaar)
+- **transparency**: 0 --> onzichtbaar. 100 --> volledig zichtbaar.
+
 </details>
 
 <details>
@@ -40,79 +63,14 @@ play.new_text()
 
 play.start_program()
 ```
-</details>
 
-<details>
-  <summary>Hoe pas ik een vorm aan? (Bijvoorbeeld de kleur)</summary>
-
-```py
-import play 
-
-play.new_circle(color='blue')
-
-play.start_program()
-```
-
-OF 
-
-```py
-import play 
-
-cirkel = play.new_text()
-cirkel.color = 'blue'
-
-play.start_program()
-```
-</details>
-
-<details>
-  <summary>Wat kan ik aan een vorm aanpassen?</summary>
-
-| Attribuut | Uitleg | Cirkel | Vierkant | Tekst |
-|:---:|:---:|:---:|:---:|:---:|
-| color   | staat standaard op 'black'. [Op deze pagina](https://www.pygame.org/docs/ref/color_list.html) zie je welke opties er zijn. | ✅ | ✅ | ✅ |
-| x  | staat standaard op 0 (het midden). Lager dan 0 is naar links, boven 0 is naar rechts. | ✅ | ✅ | ✅ |
-| y | staat standaard op 0 (het midden), Lager dan 0 is naar beneden, boven 0 is naar boven. | ✅ | ✅ | ✅ |
-| transparency | 0 --> onzichtbaar. 100 --> volledig zichtbaar. | ✅ | ✅ | ✅ |
-| border_color | de kleur van een rand, staat standaard op  'light blue' | ❌ | ✅ | ✅ |
-| border_radius | de breedte van de rand, staat standaard op 0 (geen rand zichtbaar) | ❌ | ✅ | ❌ |
-| width | de breedte van de rechthoek | ❌ | ✅ | ❌ |
-| height | de hoogte van de rechthoek | ❌ | ✅ | ❌ |
-| radius | de diameter van de cirkel | ✅ | ❌ | ❌ |
-| border_width | de breedte van de rand van de cirkel | ✅ | ❌ | ❌ |
-| words | de woorden die op het scherm komen te staan | ❌ | ❌ | ✅ |
-| font | de font van de tkest. Kun je bijvoorbeeld aanpassen naar 'arial' | ❌ | ❌ | ✅ |
-| font_size | de grootte van de font | ❌ | ❌ | ✅ |
-
-</details>
-
-<details>
-  <summary>Hoe vraag ik informatie op over een vorm, bijvoorbeeld de kleur?</summary>
-Als je iets wilt weten over een vorm, bijvoorbeeld kleur, gebeurt dit bijna altijd via **VARIABELE.ATTRIBUUT**. 
-
-In het voorbeeld hieronder is de:
-- VARIABLE **cirkel**
-- ATTRIBUUT **color**
-
-```python
-import play 
-
-cirkel = play.new_circle()
-
-print(cirkel.color)
-
-play.start_program()
-
-```
-Als het goed is, zie je in je **shell** of **console** nu het volgende staan: 
-
-```
-pygame 2.6.1 (SDL 2.28.4, Python 3.10.11)
-Hello from the pygame community. https://www.pygame.org/contribute.html
-black
-```
-We hebben dus opgevraagd dat **cirkel.color** de waarde **black** heeft.
-Naast **color** kun je alle attributen opvragen van een vorm, bijvoorbeeld **x**, **y**, etc.
+Je kunt voor **play.new_text** kiezen uit:
+- **words**: de woorden die op het scherm komen te staan
+- **x**: staat standaard op 0 (het midden). Lager dan 0 is naar links, boven 0 is naar rechts.
+- **y**: staat standaard op 0 (het midden), Lager dan 0 is naar beneden, boven 0 is naar boven.
+- **font**: de font van de tekst. Kun je bijvoorbeeld aanpassen naar 'arial'.
+- **font_size**: de grootte van de font.
+- **color**: de kleur van de tekst.
 
 </details>
 
@@ -139,8 +97,7 @@ play.start_program()
 
 Als het goed is, zie je het volgende in je **shell** of **console**
 ```
-pygame 2.6.1 (SDL 2.28.4, Python 3.10.11)
-Hello from the pygame community. https://www.pygame.org/contribute.html
+pygame-ce 2.5.3 (SDL 2.30.12, Python 3.10.11)
 100.0
 ```
 

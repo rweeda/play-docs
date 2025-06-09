@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 6
 ---
 
-# Op naar beweging
+# 1.5 Je vorm aanpassen
 
 Tot nu toe hebben de vormen stilgestaan op je scherm.
 Op die manier wordt het erg lastig om een spel te programmeren.
@@ -42,7 +42,7 @@ In dit codefragment gebeurt erg veel:
 
 Naast kleur kun je ook de x-positie, y-positie etc. aanpassen. Probeer het maar eens in de volgende opdracht.
 
-## Opdracht X.X: je aangepaste cirkel
+### Opdracht 1.6: je aangepaste cirkel
 Maak een nieuwe cirkel en pas deze aan:
 - Verander de kleur naar 'blue' 
 - Verander de x-positie naar 150 
@@ -57,5 +57,28 @@ cirkel = play.new_circle()
 
 play.start_program()
 ```
+
+<details>
+    <summary>Klik hier voor een tip!</summary>
+
+De attributen die je gaat veranderen zijn: **color**, **x**, **y** en **radius**.
+
+</details>
+
+<details>
+    <summary>Klik hier voor de oplossing!</summary>
+
+```python  
+import play 
+
+cirkel = play.new_circle()
+cirkel.color = 'blue'
+cirkel.x = 150
+cirkel.y = 200
+cirkel.radius = 200
+
+play.start_program()
+```
+</details>
 
 
