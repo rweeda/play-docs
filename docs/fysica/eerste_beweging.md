@@ -2,10 +2,9 @@
 sidebar_position: 2
 ---
 
-# Eerste beweging
+# 2.1 Eerste beweging
 
-Tijd voor beweging!~
-
+Tijd voor beweging!
 
 ```python 
 import play 
@@ -21,7 +20,7 @@ Als je het goed is, zie je bal bewegen.
 Dit komt door de regel **cirkel.start_physics()**.
 **play** is nu aan het proberen om natuurkunde na te doen.
 
-## Zwaartekracht uit en horizontaal bewegen
+## 2.1.1 Zwaartekracht uit en horizontaal bewegen
 Laten we de zwaartekracht eens uitzetten en de bal laten bewegen van links naar rechts.
 Dit kan met de volgende twee attributen:
 - **obeys_gravity**: True --> zwaartekracht wordt nagedaan, False --> geen zwaartekracht
@@ -37,20 +36,7 @@ play.start_program()
 ```
 Als het goed is, zie je bal heen en weer bewegen.
 
-## Opdracht X.X Windows screensaver
-Een tijd lang was de Windows screensaver een vormpje dat schuin omhoog bewoog en men was blij als deze precies de hoek raakte.
-Kun je deze namaken? Tip: gebruik ook **y_speed**.
-
-```python 
-import play 
-
-cirkel = play.new_circle()
-cirkel.start_physics()
-
-play.start_program()
-```
-
-## Wat kan ik allemaal aanpassen?
+## 2.1.2 Wat kan ik allemaal aanpassen?
 Deze drie heb je net geleerd:
 - **x_speed**: hoe hard wil je dat de bal beweegt op de horizontale as? 
 - **y_speed**: hoe hard wil je dat de bal beweegt op de verticale as? 
@@ -62,6 +48,74 @@ Deze vijf worden later nuttig, maar ze staan er nu voor de compleetheid:
 - **bounciness**: 1.0 vorm kaatst net zo hard terug als dat deze aankwam. 0 --> vorm kaatst niet terug bij botsing
 - **mass**: hoe 'zwaar' is je vorm? Dit kan snel ingewikkeld worden. Maar je kan je voorstellen dat een botsing anders is tussen twee vormen die even zwaar zijn in plaats van als vormen verschillend gewicht hebben.
 - **friction**: 0 --> geen frictie (energie blijft behouden).
+
+### Opdracht 2.1 Een zwevend platform
+Maak eens een platform zoals bij Super Mario.
+Het platform mag niet kunnen bewegen en de zwaartekracht heeft er geen invloed op.
+
+```python
+import play
+
+platform = play.new_box()
+platform.start_physics()
+
+play.start_program()
+```
+
+<details>
+    <summary>Klik hier voor een tip!</summary>
+
+Welke attributen wil je veranderen aan **play.new_box()**?
+Welke attributen wil je veranderen aan **start_physics()**?
+
+</details> 
+
+<details>
+    <summary>Klik hier voor een oplossing</summary>
+
+```python
+import play
+
+platform = play.new_box(width=200, height=50)
+platform.start_physics(obeys_gravity=False, can_move=False)
+
+play.start_program()
+```
+</details>
+
+### Opdracht 2.2 Eindeloos bewegende bal
+Maak een cirkel die eindeloos beweegt, zowel horizontaal als verticaal.
+Maar de zwaartekracht heeft geen invloed op de cirkel!
+
+```python
+import play
+
+bal = play.new_circle()
+bal.start_physics()
+
+play.start_program()
+```
+
+<details>
+    <summary>Klik hier voor een tip!</summary>
+
+Bij horizontaal is het slim om te kijken naar **x_speed** en bij verticaal is het nuttig om te kijken naar ....
+
+</details> 
+
+<details>
+    <summary>Klik hier voor een oplossing</summary>
+
+```python
+import play
+
+bal = play.new_circle()
+bal.start_physics(x_speed=100, y_speed=100, obeys_gravity=False)
+
+play.start_program()
+```
+</details>
+
 
 
 

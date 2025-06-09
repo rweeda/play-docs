@@ -16,7 +16,7 @@ play.start_program()
 
 Als het goed is, zie je een rechthoek op je scherm.
 
-## Wat kan ik allemaal aanpassen?
+## 1.3.1 Wat kan ik allemaal aanpassen?
 Net zoals bij **play.new_circle** heeft het programma voor ons nu ook al de kleur en grootte bepaald. Je kunt dit zelf natuurlijk aanpassen!
 Dit zijn de attributen voor **play.new_box**:
 - **color**: staat standaard op 'black'. [Op deze pagina](https://www.pygame.org/docs/ref/color_list.html) zie je welke opties er zijn.
