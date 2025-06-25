@@ -27,6 +27,15 @@ Hierbij de lijst van attributen voor een cirkel:
 - **border_width**: the breedte van de rand. Staat standaard op 0 (geen rand zichtbaar)
 - **transparency**: 0 --> onzichtbaar. 100 --> volledig zichtbaar.
 
+Voorbeeld van een kleine blauwe cirkel die een beetje naar rechts staat:
+
+```python
+import play
+
+cirkel = play.new_circle(color='blue', radius=20, x=100)
+
+play.start_program()
+```
 </details>
 
 <details>
@@ -51,6 +60,14 @@ Dit zijn de attributen voor **play.new_box**:
 - **border_radius**: the breedte van de rand. Staat standaard op 0 (geen rand zichtbaar)
 - **transparency**: 0 --> onzichtbaar. 100 --> volledig zichtbaar.
 
+Voorbeeld van een rode rechthoek die een beetje boven het midden staat:
+```python
+import play
+
+box = play.new_box(color='red', y=100)
+
+play.start_program()
+```
 </details>
 
 <details>
@@ -72,6 +89,14 @@ Je kunt voor **play.new_text** kiezen uit:
 - **font_size**: de grootte van de font.
 - **color**: de kleur van de tekst.
 
+Voorbeeld van een blauwe tekst midden bovenaan het scherm met een net iets grote font size:
+```python
+import play
+
+tekst = play.new_text(words="Hello world", y=200, font_size=50)
+
+play.start_program()
+```
 </details>
 
 <details>

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+hide_table_of_contents: true
 ---
 
 # 1.2 Je eerste cirkel
@@ -13,6 +14,8 @@ play.new_circle()
 
 play.start_program()
 ```
+
+Kopieer dit stukje code naar je editor (bijvoorbeeld Thonny). Je kunt bij Thonny linksboven op een groen rondje met een pijltje erin klikken. Dan wordt jouw programma uitgevoerd.
 
 Als het goed is, zie je een grote zwarte cirkel op je scherm.
 Merk op dat we nergens hebben aangegeven:
@@ -38,7 +41,7 @@ play.start_program()
 Ben je benieuwd uit welke kleuren je allemaal kan kiezen? Op [deze pagina](https://www.pygame.org/docs/ref/color_list.html) zie je alle opties.
 
 ### Opdracht 1.1 De kleur aanpassen
-a) Schrijf een programma waarbij de kleur van de cirkel rood is. 
+a) Schrijf een programma waarbij de kleur van de cirkel rood is. Kopieer het voorbeeld hieronder naar je editor (bijvoorbeeld Thonny) en pas het aan. Wanneer je tevreden bent met je code, kun je het gaan uitvoeren. Klik wederom op het groene rondje met het pijltje erin linksboven in Thonny.
 
 ```python 
 import play

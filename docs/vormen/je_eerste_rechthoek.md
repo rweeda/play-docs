@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+hide_table_of_contents: true
 ---
 
 # 1.3 Je eerste rechthoek
