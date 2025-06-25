@@ -648,3 +648,25 @@ async def timer():
 play.start_program()
 ```
 </details>
+
+## Global
+
+<details>
+  <summary>Hoe houd ik een score van mijn spel bij? (global)</summary>
+
+ ```python
+ import play
+
+score = 0
+score_tekst = play.new_text(str(score), y=100, font_size=40)
+
+@play.when_key_released("space")
+def spatie_ingedrukt():
+    global score
+    score = score + 1
+    score_tekst.words = str(score)
+    
+play.start_program()
+```
+
+</details>
