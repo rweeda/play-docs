@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 6
 ---
 
-# 5.1 Een gebeurtenis bij een vorm
+# 5. Gebeurtenissen bij een vorm
 Zodra je aan de gang gaat met fysica, beweegt bijvoorbeeld een bal vanzelf.
 Die kan zomaar tegen een andere vorm aanbotsen en kaatst weer terug.
 Maar hoe weet je eigenlijk in je code dat deze terugkaatst?

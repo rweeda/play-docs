@@ -1,9 +1,9 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 hide_table_of_contents: true
 ---
 
-# 2.1 Eerste beweging
+# 2. Fysica
 
 Tijd voor beweging!
 
@@ -21,7 +21,7 @@ Als je het goed is, zie je bal bewegen.
 Dit komt door de regel **cirkel.start_physics()**.
 **play** is nu aan het proberen om natuurkunde na te doen.
 
-## 2.1.1 Zwaartekracht uit en horizontaal bewegen
+## 2.1 Zwaartekracht uit en horizontaal bewegen
 Laten we de zwaartekracht eens uitzetten en de bal laten bewegen van links naar rechts.
 Dit kan met de volgende twee attributen:
 - **obeys_gravity**: True --> zwaartekracht wordt nagedaan, False --> geen zwaartekracht
@@ -37,7 +37,7 @@ play.start_program()
 ```
 Als het goed is, zie je bal heen en weer bewegen.
 
-## 2.1.2 Wat kan ik allemaal aanpassen?
+## 2.2 Wat kan ik allemaal aanpassen?
 Deze drie heb je net geleerd:
 - **x_speed**: hoe hard wil je dat de bal beweegt op de horizontale as? 
 - **y_speed**: hoe hard wil je dat de bal beweegt op de verticale as? 
@@ -50,7 +50,7 @@ Deze vijf worden later nuttig, maar ze staan er nu voor de compleetheid:
 - **mass**: hoe 'zwaar' is je vorm? Dit kan snel ingewikkeld worden. Maar je kan je voorstellen dat een botsing anders is tussen twee vormen die even zwaar zijn in plaats van als vormen verschillend gewicht hebben.
 - **friction**: 0 --> geen frictie (energie blijft behouden).
 
-### Opdracht 2.1.1 Een zwevend platform
+### Opdracht 2.1 Een zwevend platform
 Maak eens een platform zoals bij Super Mario.
 Het platform mag niet kunnen bewegen en de zwaartekracht heeft er geen invloed op.
 
@@ -84,7 +84,7 @@ play.start_program()
 ```
 </details>
 
-### Opdracht 2.1.2 Eindeloos bewegende bal
+### Opdracht 2.2 Eindeloos bewegende bal
 Maak een cirkel die eindeloos beweegt, zowel horizontaal als verticaal.
 Maar de zwaartekracht heeft geen invloed op de cirkel!
 

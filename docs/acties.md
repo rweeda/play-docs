@@ -1,9 +1,9 @@
 ---
-sidebar_position: 1
+sidebar_position: 5
 hide_table_of_contents: true
 ---
 
-# 3.1 Een actie
+# 3. Acties
 Naast dat je "eigenschappen" zoals kleur, grootte, positie, etc. kan veranderen, kun je ook acties uitvoeren op je vormen.
 Een voorbeeld hiervan is **verbergen**.
 
@@ -29,7 +29,7 @@ cirkel.hide()
 Met **cirkel.hide()** verberg je de cirkel.
 De actie wordt dus gedaan met **hide()**. Vergeet niet de haakjes!
 
-## 3.1.1 En weer tevoorschijn
+## 3.1 En weer tevoorschijn
 Met **show()** laat je cirkel weer zien
 
 ```python
