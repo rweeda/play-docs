@@ -50,7 +50,7 @@ Deze vijf worden later nuttig, maar ze staan er nu voor de compleetheid:
 - **mass**: hoe 'zwaar' is je vorm? Dit kan snel ingewikkeld worden. Maar je kan je voorstellen dat een botsing anders is tussen twee vormen die even zwaar zijn in plaats van als vormen verschillend gewicht hebben.
 - **friction**: 0 --> geen frictie (energie blijft behouden).
 
-### Opdracht 2.1 Een zwevend platform
+### Opdracht 2.1.1 Een zwevend platform
 Maak eens een platform zoals bij Super Mario.
 Het platform mag niet kunnen bewegen en de zwaartekracht heeft er geen invloed op.
 
@@ -84,7 +84,7 @@ play.start_program()
 ```
 </details>
 
-### Opdracht 2.2 Eindeloos bewegende bal
+### Opdracht 2.1.2 Eindeloos bewegende bal
 Maak een cirkel die eindeloos beweegt, zowel horizontaal als verticaal.
 Maar de zwaartekracht heeft geen invloed op de cirkel!
 

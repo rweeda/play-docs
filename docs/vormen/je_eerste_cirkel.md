@@ -40,7 +40,7 @@ play.start_program()
 
 Ben je benieuwd uit welke kleuren je allemaal kan kiezen? Op [deze pagina](https://www.pygame.org/docs/ref/color_list.html) zie je alle opties.
 
-### Opdracht 1.1 De kleur aanpassen
+### Opdracht 1.2.1 De kleur aanpassen
 a) Schrijf een programma waarbij de kleur van de cirkel rood is. Kopieer het voorbeeld hieronder naar je editor (bijvoorbeeld Thonny) en pas het aan. Wanneer je tevreden bent met je code, kun je het gaan uitvoeren. Klik wederom op het groene rondje met het pijltje erin linksboven in Thonny.
 
 ```python 
@@ -113,7 +113,7 @@ play.start_program()
 
 Zie je de cirkel in het midden staan?
 
-### Opdracht 1.2: de positie aanpassen
+### Opdracht 1.2.2: de positie aanpassen
 
 Waar zie je cirkel verschijnen bij:
 
@@ -226,7 +226,7 @@ Hierbij de lijst van attributen voor een cirkel:
 - **border_width**: the breedte van de rand. Staat standaard op 0 (geen rand zichtbaar)
 - **transparency**: 0 --> onzichtbaar. 100 --> volledig zichtbaar.
 
-### Opdracht 1.3 De mooiste cirkel
+### Opdracht 1.2.3 De mooiste cirkel
 
 a) Teken twee cirkels die elkaar niet mogen raken. De eerste cirkel is blauw en heeft geen rand. De tweede is rood en heeft een dunne groene rand.
 

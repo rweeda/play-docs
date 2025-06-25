@@ -34,7 +34,7 @@ Direct onder de gebeurtenis plaatsen we een functie **spatie_ingedrukt**.
 Deze functie wordt uitgevoerd zodra de gebeurtenis gebeurt, in dit geval het indrukken van de spatiebalk.
 
 
-### Opdracht 4.1 weg en weer terug
+### Opdracht 4.1.1 weg en weer terug
 Met onderstaand codefragment kun je een box naar boven en beneden bewegen.
 Aan jou de taak:
 - de box wordt onzichtbaar (.hide()) bij pijltje omhoog ('up')
