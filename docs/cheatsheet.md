@@ -578,7 +578,7 @@ def aangeraakt():
     text.words = 'batje is aangeraakt'
     
 play.start_program()
-````
+```
 </details>
 
 <details>
@@ -600,12 +600,88 @@ play.start_program()
 ```
 </details>
 
+<details>
+  <summary>Zodra twee vormen elkaar raken (@VARIABLE.when_touching)</summary>
+Je gebruikt @VARIABLE.when_touching als je wilt weten of twee vormen elkaar raken.
 
-- Wanneer twee vormen elkaar raken (@VARIABLE.when_touching)
-- Wanneer een vorm de muur aanraakt (@VARIABLE.when_touching_wall)
-- Wanneer op een vorm geklikt wordt (@VARIABLE.when_clicked)
+```python
+import play
+
+bal = play.new_circle(radius=50)
+bal.start_physics(obeys_gravity=False, x_speed=20)
+
+batje = play.new_box(x=200)
+
+tekst = play.new_text("batje nog niet aangeraakt", y=200)
+
+@bal.when_touching(batje)
+def batje_aangeraakt():
+    tekst.words = 'batje wel aangeraakt'
+
+play.start_program()
+```
+
+Je kunt overigens ook **VARIABLE.is_touching(VARIABLE)** gebruiken:
+Elke keer als je pijltje omhoog klikt, zie je of de bal het batje aanraakt:
+```python
+import play
+
+bal = play.new_circle(radius=50)
+bal.start_physics(obeys_gravity=False, x_speed=50)
+
+batje = play.new_box(x=200)
+
+tekst = play.new_text("bal raakt batje niet", y=200)
+
+@play.when_key_pressed('up')
+def pijlte_omhoog():
+    if bal.is_touching(batje):
+        tekst.words = 'bal raakt batje'
+    else:   
+        tekst.words = 'bal raakt batje niet'
+
+play.start_program()
+```
+
+</details>
+
+<details>
+  <summary>Wanneer een vorm de muur aanraakt (@VARIABLE.when_touching_wall)</summary>
+
+```python
+import play
+
+bal = play.new_circle(radius=50)
+bal.start_physics(obeys_gravity=False, x_speed=50)
+
+@bal.when_touching_wall
+def teleport():
+    bal.x=0
+
+play.start_program()
+```
+
+</details>
+
+<details>
+  <summary>Wanneer er op een vorm geklikt wordt (@VARIABLE.when_clicked)</summary>
+
+```python
+import play
+
+bal = play.new_circle(radius=50)
+bal.start_physics(obeys_gravity=False, x_speed=50)
+
+@bal.when_clicked
+def geklikt():
+    bal.x=0
+
+play.start_program()
+```
+</details>
 
 ## Tijd
+
 
 <details>
   <summary>Ik wil tijdelijk iets veranderen aan een vorm, bijvoorbeeld de snelheid (async await)</summary>
