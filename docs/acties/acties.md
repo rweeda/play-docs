@@ -1,9 +1,9 @@
 ---
-sidebar_position: 5
+sidebar_position: 1
 hide_table_of_contents: true
 ---
 
-# 3. Acties
+# 3.1 Acties
 Naast dat je "eigenschappen" zoals kleur, grootte, positie, etc. kan veranderen, kun je ook acties uitvoeren op je vormen.
 Een voorbeeld hiervan is **verbergen**.
 
