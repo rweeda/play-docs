@@ -24,7 +24,7 @@ Hierbij de lijst van attributen voor een cirkel:
 - **y**: staat standaard op 0 (het midden), Lager dan 0 is naar beneden, boven 0 is naar boven.
 - **radius**: staat standaard op 100. Hoe groter de waarde, hoe groter de cirkel.
 - **border_color**: staat standaard op  'light blue'. Let op, als de **border_width** 0 is, zie je de rand niet.
-- **border_width**: the breedte van de rand. Staat standaard op 0 (geen rand zichtbaar)
+- **border_width**: de breedte van de rand. Staat standaard op 0 (geen rand zichtbaar)
 - **transparency**: 0 --> onzichtbaar. 100 --> volledig zichtbaar.
 
 Voorbeeld van een kleine blauwe cirkel die een beetje naar rechts staat:
@@ -57,7 +57,7 @@ Dit zijn de attributen voor **play.new_box**:
 - **width**: de breedte van de rechthoek.
 - **height**: de hoogte van de rechthoek.
 - **border_color**: staat standaard op  'light blue'. Let op, als de **border_width** 0 is, zie je de rand niet.
-- **border_radius**: the breedte van de rand. Staat standaard op 0 (geen rand zichtbaar)
+- **border_radius**: de breedte van de rand. Staat standaard op 0 (geen rand zichtbaar)
 - **transparency**: 0 --> onzichtbaar. 100 --> volledig zichtbaar.
 
 Voorbeeld van een rode rechthoek die een beetje boven het midden staat:
@@ -238,7 +238,7 @@ play.start_program()
 ## Acties
 
 <details>
-  <summary>Hoe maak een ik vorm onzichtbaar (hide)?</summary>
+  <summary>Hoe maak  ik een vorm onzichtbaar (hide)?</summary>
 
 Hiermee teken je een cirkel en maak je hem onmiddelijk onzichtbaar.
 
@@ -332,7 +332,7 @@ Je gebruikt **@play.when_key_pressed** om te checken of een toets ingedrukt word
 </details>
 
 <details>
-  <summary>Bij het indrukken van twee or meerdere toetsen (@play.when_key_pressed)</summary>
+  <summary>Bij het indrukken van twee of meerdere toetsen (@play.when_key_pressed)</summary>
 
 Als je met meerdere toetsen te maken hebt, heb je in ieder geval twee opties. 
 - twee losse **@play.when_key_pressed** gebeurtenissen

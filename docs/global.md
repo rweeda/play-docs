@@ -24,17 +24,17 @@ def spatie_ingedrukt():
 play.start_program()
 ```
 
-Druk maar ééns op spatie. Als het goed is verandert er niets en zie je het volgende:
+Druk maar eens op spatie. Als het goed is verandert er niets en zie je het volgende:
 
 ```
 UnboundLocalError: local variable 'score' referenced before assignment
 ```
 
-Dit betekent dat we niet de **rechten** hebben om de variable **score** te wijzigen.
+Dit betekent dat we niet de **rechten** hebben om de variabele **score** te wijzigen.
 
 ## 7.2 een goed voorbeeld
 We gaan het statement **global** toevoegen.
-Als we het commonda **global VARIABLE** geven, dan hebben we wel de rechten om de variabele te wijzigen.
+Als we het commondo **global VARIABLE** geven, dan hebben we wel de rechten om de variabele te wijzigen.
 
 ```python
 import play

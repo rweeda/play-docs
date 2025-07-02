@@ -4,7 +4,7 @@ hide_table_of_contents: true
 ---
 
 # 3.2 Zijn acties functies?
-Nu zal je denken, zijn acties niet gewoon hetzelfde als de functies die we eerder gezien hebben?
+Nu zul je denken, zijn acties niet gewoon hetzelfde als de functies die we eerder gezien hebben?
 
 ```python
 import play 
@@ -51,5 +51,4 @@ cirkel.hide()
 play.start_program()
 ```
 
-In dit voorbeeld, zit de methode **hide** vast aan de vorm **play.new_circle**.
-Wanneer we **cirkel.hide()** uitvoeren, hoeven we er niet meer bij te vertellen dat de cirkel onzichtbaar moet worden, want dit weet Python al omdat we **cirkel.hide()** zeggen.
+In dit voorbeeld zit de methode **hide()** vast aan het **cirkel**-object. Wanneer we **cirkel.hide()** uitvoeren, weet Python dat de hide-methode specifiek op deze ene cirkel moet worden toegepast."

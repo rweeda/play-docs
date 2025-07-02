@@ -4,7 +4,7 @@ hide_table_of_contents: true
 ---
 
 # 3.1 Acties
-Naast dat je "eigenschappen" zoals kleur, grootte, positie, etc. kan veranderen, kun je ook acties uitvoeren op je vormen.
+Naast dat je "eigenschappen" zoals kleur, grootte, positie, etc. kunt veranderen, kun je ook acties uitvoeren op je vormen.
 Een voorbeeld hiervan is **verbergen**.
 
 ```python
@@ -21,7 +21,7 @@ Wat gebeurt hier?
 ```python
 cirkel = play.new_circle()
 ```
-Met **play.new_circle** maak je de cirkel en **cirkel =** zorgt ervoor dat we de variable **cirkel** kunnen gebruiken om de cirkel te veranderen.
+Met **play.new_circle** maak je de cirkel en **cirkel =** zorgt ervoor dat we de variabele **cirkel** kunnen gebruiken om de cirkel te veranderen.
 
 ```python
 cirkel.hide()
@@ -29,8 +29,8 @@ cirkel.hide()
 Met **cirkel.hide()** verberg je de cirkel.
 De actie wordt dus gedaan met **hide()**. Vergeet niet de haakjes!
 
-## 3.1 En weer tevoorschijn
-Met **show()** laat je cirkel weer zien
+## 3.1.1 En weer tevoorschijn
+Met **show()** laat je de cirkel weer zien.
 
 ```python
 import play 

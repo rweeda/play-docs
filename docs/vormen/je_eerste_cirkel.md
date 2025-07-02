@@ -84,7 +84,7 @@ play.start_program()
 <details>
     <summary>Klik hier voor een tip!</summary>
 
-De lijsten van opties vind je op [deze pagina](https://www.pygame.org/docs/ref/color_list.html).
+De lijst van opties vind je op [deze pagina](https://www.pygame.org/docs/ref/color_list.html).
 </details>
 
 <details>
@@ -223,7 +223,7 @@ Hierbij de lijst van attributen voor een cirkel:
 - **y**: staat standaard op 0 (het midden), Lager dan 0 is naar beneden, boven 0 is naar boven.
 - **radius**: staat standaard op 100. Hoe groter de waarde, hoe groter de cirkel.
 - **border_color**: staat standaard op  'light blue'. Let op, als de **border_width** 0 is, zie je de rand niet.
-- **border_width**: the breedte van de rand. Staat standaard op 0 (geen rand zichtbaar)
+- **border_width**: de breedte van de rand. Staat standaard op 0 (geen rand zichtbaar)
 - **transparency**: 0 --> onzichtbaar. 100 --> volledig zichtbaar.
 
 ### Opdracht 1.2.3 De mooiste cirkel

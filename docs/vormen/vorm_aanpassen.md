@@ -21,7 +21,7 @@ play.start_program()
 ```
 
 Hoe kan ik de cirkel veranderen **nadat** deze gemaakt is?
-Oftwel, kan ik via code na **play.new_circle()** iets veranderen aan de cirkel?
+Oftewel, kan ik via code na **play.new_circle()** iets veranderen aan de cirkel?
 
 ## 1.5.1 De variabele
 Het antwoord is heel duidelijk: nee. We hebben een **variabele** nodig die ons toegang geeft tot de cirkel. Kijk maar eens goed naar het onderstaande voorbeeld:
@@ -39,7 +39,7 @@ play.start_program()
 In dit codefragment gebeurt erg veel:
 - **play.new_circle()**: dit tekent de cirkel op het scherm
 - **cirkel = play.new_circle()**: dit tekent de cirkel EN zorgt ervoor dat de variabele **cirkel** verwijst naar onze cirkel
-- **cirkel.color = 'blue'**: dit wijzigt van onze cirkel alleen kleur naar blauw
+- **cirkel.color = 'blue'**: dit wijzigt van onze cirkel alleen de kleur naar blauw
 
 Naast kleur kun je ook de x-positie, y-positie etc. aanpassen. Probeer het maar eens in de volgende opdracht.
 

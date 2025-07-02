@@ -50,8 +50,8 @@ We maken een tekst :)
 @bal.when_stopped_touching(batje)
 ```
 Let heel goed op!
-- **bal** wijst hier naar de **variable** bal. Deze variabele wijst naar onze gemaakte cirkel.
-- **batje** wijst hier naar de **variable** batje. Deze variabele wijst naar onze gemaakte batje.
+- **bal** wijst hier naar de **variabele** bal. Deze variabele wijst naar de gemaakte cirkel.
+- **batje** wijst hier naar de **variabele** batje. Deze variabele wijst naar de gemaakte batje.
 Als onze bal dus botst tegen ons batje en terugkaatst, dan is deze gebeurtenis waar.
 
 ```python

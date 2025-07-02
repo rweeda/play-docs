@@ -30,7 +30,7 @@ Hoe werkt dit?
 ```python
 async def tijdelijk_sneller():
 ```
-We hebben **async** voor **def** gezet. Dit maakt het een asynchronous functie, oftewel alles kan doorgaan en deze functie kan even wachten tot deze weer meedoet met de rest.
+We hebben **async** voor **def** gezet. Dit maakt het een asynchrone functie, oftewel alles kan doorgaan en deze functie kan even wachten tot deze weer meedoet met de rest.
 
 ```python
     ball.physics.x_speed = 100

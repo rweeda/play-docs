@@ -26,7 +26,7 @@ Dit zijn de attributen voor **play.new_box**:
 - **width**: de breedte van de rechthoek.
 - **height**: de hoogte van de rechthoek.
 - **border_color**: staat standaard op  'light blue'. Let op, als de **border_width** 0 is, zie je de rand niet.
-- **border_radius**: the breedte van de rand. Staat standaard op 0 (geen rand zichtbaar)
+- **border_radius**: de breedte van de rand. Staat standaard op 0 (geen rand zichtbaar)
 - **transparency**: 0 --> onzichtbaar. 100 --> volledig zichtbaar.
 
 Om bijvoorbeeld de hoogte en breedte aan te passen kun je het volgende doen:
@@ -54,7 +54,7 @@ play.new_box(width=800, height=600)
 
 # een eerste wit rechthoek
 play.new_box(color='white')
-# PAS DEZE CODE AAN
+# VOEG HIER JE CODE TOE
 
 play.start_program()
 ```

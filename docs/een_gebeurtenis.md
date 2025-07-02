@@ -34,12 +34,11 @@ Direct onder de gebeurtenis plaatsen we een functie **spatie_ingedrukt**.
 Deze functie wordt uitgevoerd zodra de gebeurtenis gebeurt, in dit geval het indrukken van de spatiebalk.
 
 
-### Opdracht 4.1 weg en weer terug
-Met onderstaand codefragment kun je een box naar boven en beneden bewegen.
-Aan jou de taak:
-- de box wordt onzichtbaar (.hide()) bij pijltje omhoog ('up')
-- de box wordt zichtbaar (.show()) bij pijltje omlaag ('down')
-- in plaats van **when_key_pressed** gebruik je **when_key_released**
+### Opdracht 4.1 ook links en rechts
+Begin met het onderstaande codefragment en pas het aan zodat het aan de volgende eisen voldoet (voeg twee functies toe):
+- de box beweegt naar links bij pijltje naar links ('left')
+- de box beweegt naar rechts bij pijltje naar rechts ('right')
+- in plaats van **when_key_pressed** gebruik je **when_key_released** voor alle vier gebeurtenissen
 
 
 ```python
@@ -68,11 +67,19 @@ box = play.new_box()
 
 @play.when_key_released("up")
 def omhoog():
-  box.hide()
+  box.y = box.y + 10
 
 @play.when_key_released('down')
 def omlaag():
-  box.show()
+  box.y = box.y - 10
+
+@play.when_key_released("left")
+def omhoog():
+  box.x = box.x - 10
+
+@play.when_key_released('right')
+def omlaag():
+  box.x = box.x + 10
     
 play.start_program()
 ```

@@ -17,7 +17,7 @@ play.start_program()
 ```
 
 Wat gebeurt er als je dit codefragment draait?
-Als je het goed is, zie je bal bewegen.
+Als je het goed is, zie je de bal bewegen.
 Dit komt door de regel **cirkel.start_physics()**.
 **play** is nu aan het proberen om natuurkunde na te doen.
 
@@ -43,9 +43,9 @@ Deze drie heb je net geleerd:
 - **y_speed**: hoe hard wil je dat de bal beweegt op de verticale as? 
 - **obeys_gravity**: True --> zwaartekracht wordt nagedaan, False --> geen zwaartekracht
 
-Deze vijf worden later nuttig, maar ze staan er nu voor de compleetheid:
+Deze vijf worden later nuttig, maar ze staan er nu al zodat je weet wat er mogelijk is.
 - **can_move**: True --> de vorm mag bewegen, False, de vorm staat altijd stil
-- **stable**: True --> als iets botst tegen de vorm, zal deze niet bewegen, False, de vorm zal bewegen bij een botsing.
+- **stable**: True --> als iets botst tegen deze vorm, zal deze niet bewegen, False, de vorm zal bewegen bij een botsing.
 - **bounciness**: 1.0 vorm kaatst net zo hard terug als dat deze aankwam. 0 --> vorm kaatst niet terug bij botsing
 - **mass**: hoe 'zwaar' is je vorm? Dit kan snel ingewikkeld worden. Maar je kan je voorstellen dat een botsing anders is tussen twee vormen die even zwaar zijn in plaats van als vormen verschillend gewicht hebben.
 - **friction**: 0 --> geen frictie (energie blijft behouden).

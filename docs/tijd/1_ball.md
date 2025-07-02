@@ -17,8 +17,8 @@ play.start_program()
 ```
 
 ## 6.1.1 Wachten met time.sleep
-We gaan nu proberen om de ball tijdelijk sneller te laten bewegen bij een muisklik.
-Je meest logische gedachte is misschien om **time.sleep*8 te gebruiken:
+We gaan nu proberen om de bal tijdelijk sneller te laten bewegen bij een muisklik.
+Je meest logische gedachte is misschien om **time.sleep** te gebruiken:
 
 ```python 
 import play
@@ -29,7 +29,7 @@ ball.start_physics(obeys_gravity=False, x_speed=10)
 
 @play.when_mouse_clicked
 def tijdelijk_sneller():
-    ball.physics.x_speed = 60
+    ball.physics.x_speed = 1000
     time.sleep(1)
     ball.physics.x_speed = 10
 
@@ -43,7 +43,7 @@ Gaat de bal sneller bewegen? Wat gebeurt er eigenlijk?
 ```
 Wanneer de muis geklikt wordt:
 - **def tijdelijk_sneller():** voeren we deze functie uit
-= **ball.physics.x_speed = 1000** we geven de bal een hoge snelheid
+- **ball.physics.x_speed = 1000** we geven de bal een hoge snelheid
 - **time.sleep(1)** we wachten een seconde
 - **ball.physics.x_speed = 10** we geven de bal een lage snelheid
 

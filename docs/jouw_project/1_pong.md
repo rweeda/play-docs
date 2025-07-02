@@ -12,15 +12,14 @@ Verder gebruik je **start_physics** om de bal te laten bewegen.
 Een tip is om **start_physics(obeys_gravity=False, x_speed=60)** te gebruiken als start.
 
 ## De batjes
-Een batje maak je met **play.new_box**
-Ook hier voeg je fysica aan toe met **start_physics(obeys_gravity=False, can_move=False)**.
+Een batje maak je met **play.new_box**. Ook hier voeg je fysica aan toe met **start_physics(obeys_gravity=False, can_move=False. friction=0)**.
 Je maakt er twee, anders kunnen we niet tegen elkaar spelen.
 
 ## Batje bewegen
 **@play.when_key_pressed** kun je gebruiken zodat je de batjes naar boven en beneden kan bewegen.
 
 ## Score
-Een score kun je aanmaken met **play.new_text**
+Een score kun je aanmaken met **play.new_text**.
 
 ## Botsing bal en batje
 Je gebruikt hiervoor de gebeurtenis **VARIABLE.when_stopped_touching(VARIABLE2)**.

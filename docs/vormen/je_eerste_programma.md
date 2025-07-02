@@ -13,5 +13,5 @@ play.start_program()
 ```
 
 Als het goed is, opent er nu een scherm op je computer.
-**play_start_program()** zorgt er dus voor dat een scherm geopend wordt.
-Je mag op het kruisje klikken om deze af te sluiten.
+**play.start_program()** zorgt er dus voor dat een scherm geopend wordt.
+Je mag op het kruisje klikken om dit af te sluiten.
