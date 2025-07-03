@@ -44,7 +44,8 @@ play.start_program()
 We gaan deze afbeelding namaken met **play.new_box**
 ![weg](weg.png)
 
-Maar hoe doen we dat eigenlijk? We helpen je een beetje op gang:
+Maar hoe doen we dat eigenlijk? We helpen je een beetje op gang.
+Vanaf nu is het weer heel handig om te kijken in de [Cheatsheet](../cheatsheet.md).
 
 ```python
 import play
