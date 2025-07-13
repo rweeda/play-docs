@@ -24,7 +24,7 @@ Hoe kan ik de cirkel veranderen **nadat** deze gemaakt is?
 Oftewel, kan ik via code na **play.new_circle()** iets veranderen aan de cirkel?
 
 ## 1.5.1 De variabele
-Het antwoord is heel duidelijk: nee. We hebben een **variabele** nodig die ons toegang geeft tot de cirkel. Kijk maar eens goed naar het onderstaande voorbeeld:
+We hebben een **variabele** nodig die ons toegang geeft tot de cirkel. Kijk maar eens goed naar het onderstaande voorbeeld:
 
 
 ```python
