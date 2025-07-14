@@ -746,3 +746,26 @@ play.start_program()
 ```
 
 </details>
+
+## Database (JSON)
+
+<details>
+  <summary>Hoe sla ik een high-score op en hoe vraag ik deze op?</summary>
+
+Met **play.new_database** maak je een nieuwe database.
+Je gebruikt de methode **set_data** voor het opslaan van data en **get_data** voor het opvragen van data.
+```python
+import play
+
+database = play.new_database()
+
+database.set_data('punten', 0)
+
+huidige_highscore = database.get_data('punten')
+
+play.new_text(words="high score is " + str(huidige_highscore))
+
+play.start_program()
+
+```
+</details>
