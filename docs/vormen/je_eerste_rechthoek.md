@@ -20,21 +20,21 @@ Als het goed is, zie je een rechthoek op je scherm.
 ## 1.3.1 Wat kan ik allemaal aanpassen?
 Net zoals bij **play.new_circle** heeft het programma voor ons nu ook al de kleur en grootte bepaald. Je kunt dit zelf natuurlijk aanpassen!
 Dit zijn de attributen voor **play.new_box**:
-- **color**: staat standaard op 'black'. [Op deze pagina](https://www.pygame.org/docs/ref/color_list.html) zie je welke opties er zijn.
-- **x**: staat standaard op 0 (het midden). Lager dan 0 is naar links, boven 0 is naar rechts.
-- **y**: staat standaard op 0 (het midden), Lager dan 0 is naar beneden, boven 0 is naar boven.
+- **color**: Kleur. Staat standaard op 'black'. [Op deze pagina](https://www.pygame.org/docs/ref/color_list.html) zie je welke opties er zijn.
+- **x**: x-coördinaat. Staat standaard op 0 (het midden). Kleiner dan 0 is naar links, groter dan 0 is naar rechts.
+- **y**: y-coördinaat. Staat standaard op 0 (het midden), Kleiner dan 0 is naar beneden, groter dan is naar boven.
 - **width**: de breedte van de rechthoek.
 - **height**: de hoogte van de rechthoek.
-- **border_color**: staat standaard op  'light blue'. Let op, als de **border_width** 0 is, zie je de rand niet.
-- **border_radius**: de breedte van de rand. Staat standaard op 0 (geen rand zichtbaar)
-- **transparency**: 0 --> onzichtbaar. 100 --> volledig zichtbaar.
+- **border_color**: Kleur van de rand. Staat standaard op  'light blue'. Let op, als de **border_width** 0 is, zie je de rand niet.
+- **border_radius**: Breedte van de rand. Staat standaard op 0 (geen rand zichtbaar)
+- **transparency**: Doorzichtbaarheid. 0 is onzichtbaar, 100 is volledig zichtbaar.
 
 Om bijvoorbeeld de hoogte en breedte aan te passen kun je het volgende doen:
 
 ```python
 import play
 
-play.new_box(width=200, height=200)
+play.new_box(width=250, height=150)
 
 play.start_program()
 ```
@@ -62,7 +62,7 @@ play.start_program()
 
 <details>
     <summary>Klik hier voor een tip!</summary>
-
+Bekijk de [Cheatsheet](../cheatsheet.md), **Vierkant of rechthoek (play.new_box)**
 Gebruik drie keer **play.new_box** 
 en het is nuttig om de attributen **y**, **width** en **height** te gebruiken.
 
