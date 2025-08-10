@@ -15,7 +15,7 @@ play.new_circle()
 play.start_program()
 ```
 
-Kopieer dit stukje code naar je editor (bijvoorbeeld Thonny). Je kunt bij Thonny linksboven op een groen rondje met een pijltje erin klikken. Dan wordt jouw programma uitgevoerd.
+Kopieer dit stukje code naar je editor (bijvoorbeeld Thonny of Visual Studio Code). Je kunt bij Thonny linksboven op een groen rondje met een pijltje erin klikken, bij VSC op de play-knop rechtsboven. Dan wordt jouw programma uitgevoerd.
 
 Als het goed is, zie je een grote zwarte cirkel op je scherm.
 Merk op dat we nergens hebben aangegeven:
@@ -41,7 +41,7 @@ play.start_program()
 Ben je benieuwd uit welke kleuren je allemaal kan kiezen? Op [deze pagina](https://www.pygame.org/docs/ref/color_list.html) zie je alle opties.
 
 ### Opdracht 1.2.1 De kleur aanpassen
-a) Schrijf een programma waarbij de kleur van de cirkel rood is. Kopieer het voorbeeld hieronder naar je editor (bijvoorbeeld Thonny of Visual Studio Code) en pas het aan. Wanneer je tevreden bent met je code, kun je het gaan uitvoeren. 
+a) Schrijf een programma waarbij de kleur van de cirkel rood is. Kopieer het voorbeeld hieronder naar je editor (bijvoorbeeld Thonny of Visual Studio Code) en pas de kleur aan naar rood. Wanneer je tevreden bent met je code, kun je het gaan uitvoeren. 
 
 ```python 
 import play
@@ -55,6 +55,7 @@ play.start_program()
     <summary>Klik hier voor een tip!</summary>
 
 Het attribuut **color** gebruik je voor de kleur.
+De kleur geef je tussen aanhalingstekens.
 </details>
 
 <details>
@@ -70,7 +71,7 @@ play.start_program()
 </details>
 
 
-b) pas het programma aan met een kleur die je gekozen hebt uit de lijst van alle opties
+b) pas het programma aan met een kleur die je gekozen hebt uit [de lijst](https://www.pygame.org/docs/ref/color_list.html) van alle opties
 
 
 ```python 
@@ -81,11 +82,6 @@ import play
 play.start_program()
 ```
 
-<details>
-    <summary>Klik hier voor een tip!</summary>
-
-De lijst van opties vind je op [deze pagina](https://www.pygame.org/docs/ref/color_list.html).
-</details>
 
 <details>
     <summary>Klik hier voor een oplossing!</summary>
