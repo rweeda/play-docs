@@ -11,6 +11,8 @@ Mocht je bekend zijn met **pip**, dan kun je het package installeren via:
 pip install corderius-play
 ```
 
+In Visual Studio Code moet je hiervoor eerst de terminal openen met Ctrl-Shift-+.
+
 Anders kunnen we het uiteraard via Thonny installeren:
 Klik op "Tools" en daarna "Manage packages"
 
