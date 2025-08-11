@@ -193,9 +193,9 @@ De cirkel zou in de rechteronderhoek moeten staan.
 
 ## 1.2.3 Wat kan ik aanpassen aan een cirkel?
 Hierbij de lijst van attributen voor een cirkel:
-- **color**: Kleur. Staat standaard op 'black'. [Op deze pagina](https://www.pygame.org/docs/ref/color_list.html) zie je welke opties er zijn.
+- **color**: Kleur. Staat standaard op 'black'. [Op deze pagina](https://www.pygame.org/docs/ref/color_list.html) zie je welke kleurenopties er zijn.
 - **x**: x-positie. Staat standaard op 0 (het midden). Kleiner dan 0 is naar links, groter dan 0 is naar rechts.
-- **y**: y-positie. Staat standaard op 0 (het midden), Kleiner dan 0 is naar beneden, groter dan 0 is naar boven.
+- **y**: y-positie. Staat standaard op 0 (het midden). Kleiner dan 0 is naar beneden, groter dan 0 is naar boven.
 - **radius**: Staal. Staat standaard op 100. Hoe groter de waarde, hoe groter de cirkel.
 - **border_color**: Kleur van de rand. Staat standaard op  'light blue'. Let op, als de **border_width** 0 is, zie je de rand niet.
 - **border_width**: Breedte van de rand. Staat standaard op 0 (geen rand zichtbaar)
