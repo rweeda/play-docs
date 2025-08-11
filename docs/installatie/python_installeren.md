@@ -18,8 +18,8 @@ Hoe installeer ik Thonny?
 - Kies je besturingssysteem (waarschijnlijk Windows) en kies dan wat begint met "Installer with 64-bit Python ...."
 - installeer het programma op je computer en open het vervolgens
 
-## Visual Studio Code
-Hoe installeer ik Visual Studio Code?
+## Visual Studio Code (VSC)
+Hoe installeer ik Visual Studio Code (VSC)?
 - ga naar [Visual Studio Code](https://code.visualstudio.com/)
 - volg de stappen in [deze video](https://youtu.be/D2cwvpJSBX4) om Python te installeren binnen Visual Studio Code en ook een programma uit te voeren binnen Visual Studio Code.
 
